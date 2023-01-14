@@ -6,3 +6,13 @@ intial route use set default route
 
 
 obsecure use in form field to hinţ word like password dot dot into
+
+
+git init    foŕinitialize
+
+git add .   for file add
+
+git commit -m "your commit" 
+
+git remote add origin https://github.com/avikuuuu/30DaysOfFultter.git   when you push first time 
+ git push --set-upstream origin master   to push online data 

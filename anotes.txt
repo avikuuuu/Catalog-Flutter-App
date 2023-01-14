@@ -1,0 +1,8 @@
+@required usé to require parameter in function calling
+anď ruppe =100 in parameter use to set defaulf setting
+
+
+intial route use set default route 
+
+
+obsecure use in form field to hinţ word like password dot dot into

@@ -1,3 +1,4 @@
+//ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -7,6 +8,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     int days = 30;
     String name = "avki";
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Catelog App"),

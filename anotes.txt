@@ -16,3 +16,6 @@ git commit -m "your commit"
 
 git remote add origin https://github.com/avikuuuu/30DaysOfFultter.git   when you push first time 
  git push --set-upstream origin master   to push online data 
+
+
+ #########if ink well havé only decoraction property not in his child othre wise effect will be in backgruond

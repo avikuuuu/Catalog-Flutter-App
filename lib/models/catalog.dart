@@ -27,7 +27,6 @@ class Item {
     required this.price,
     required this.color,
     required this.image,
-
   });
 
   factory Item.formMap(Map<String, dynamic> map) {
@@ -38,15 +37,14 @@ class Item {
         price: map["price"],
         color: map["color"],
         image: map["image"]);
-
   }
 
   toMap() => {
-    "id":id,
-    "name":name,
-    "desc":desc,
-    "price":price,
-    "color":color,
-    "image":image
-  };
+        "id": id,
+        "name": name,
+        "desc": desc,
+        "price": price,
+        "color": color,
+        "image": image
+      };
 }

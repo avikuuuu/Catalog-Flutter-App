@@ -6,7 +6,7 @@ import 'package:flutter_catlog/widgets/themes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(MyApp());
+  return runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

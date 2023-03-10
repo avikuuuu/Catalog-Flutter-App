@@ -13,7 +13,13 @@ class ItemWidgets extends StatelessWidget {
         onTap: () {
           print("\$${item.name} pressed");
         },
-        leading: Image.network(item.image),
+        leading: Image.network(
+          item.image,
+          errorBuilder: (context, o, s) {
+            print(o.toString());
+            return Icon(Icons.image_not_supported, size: 40);
+          },
+        ),
         title: Text(item.name),
         subtitle: Text(item.desc),
         trailing: Text(

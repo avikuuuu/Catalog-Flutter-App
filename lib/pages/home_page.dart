@@ -9,8 +9,8 @@ import 'package:flutter_catlog/widgets/item_widgets.dart';
 import 'package:flutter_catlog/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-import 'home_widgets/catalog_header.dart';
-import 'home_widgets/catalog_list.dart';
+import '../widgets/home_widgets/catalog_header.dart';
+import '../widgets/home_widgets/catalog_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             CatalogHeader(),
             if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
-              CatalogList().expand()
+              CatalogList().expand() 
             else
               CircularProgressIndicator().centered().expand(),
           ]),

@@ -17,21 +17,24 @@ class HomeDetailPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       backgroundColor: MyTheme.creamColor,
-      bottomNavigationBar: ButtonBar(
-        alignment: MainAxisAlignment.spaceBetween,
-        buttonPadding: Vx.mOnly(right: 20),
-        children: [
-          "\$${catalog.price}".text.bold.xl4.red800.make(),
-          ElevatedButton(
-                  onPressed: (() {}),
-                  style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(MyTheme.darkBlueColor),
-                      shape: MaterialStateProperty.all(StadiumBorder())),
-                  child: "BUY".text.bold.xl.make())
-              .wh(100, 50)
-        ],
-      ).p20(),
+      bottomNavigationBar: Container(
+        color: Colors.white,
+        child: ButtonBar(
+          alignment: MainAxisAlignment.spaceBetween,
+          buttonPadding: Vx.mOnly(right: 20),
+          children: [
+            "\$${catalog.price}".text.bold.xl4.red800.make(),
+            ElevatedButton(
+                    onPressed: (() {}),
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(MyTheme.darkBlueColor),
+                        shape: MaterialStateProperty.all(StadiumBorder())),
+                    child: "BUY".text.bold.xl.make())
+                .wh(100, 50)
+          ],
+        ).p20(),
+      ),
       body: SafeArea(
         child: Column(
           children: [

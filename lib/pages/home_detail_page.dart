@@ -15,10 +15,12 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      backgroundColor: MyTheme.creamColor,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: Vx.mOnly(right: 20),
@@ -27,11 +29,11 @@ class HomeDetailPage extends StatelessWidget {
             ElevatedButton(
                     onPressed: (() {}),
                     style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(MyTheme.darkBlueColor),
+                        backgroundColor: MaterialStateProperty.all(
+                            context.theme.buttonColor),
                         shape: MaterialStateProperty.all(StadiumBorder())),
-                    child: "BUY".text.bold.xl.make())
-                .wh(100, 50)
+                    child: "Add to cart".text.bold.xl.make())
+                .wh(130, 50)
           ],
         ).p20(),
       ),
@@ -50,16 +52,20 @@ class HomeDetailPage extends StatelessWidget {
                 arcType: VxArcType.CONVEY,
                 edge: VxEdge.TOP,
                 child: Container(
-                  color: Colors.white,
+                  color: context.cardColor,
                   width: context.screenWidth,
                   child: Column(children: [
                     catalog.name.text.xl
-                        .color(MyTheme.darkBlueColor)
+                        .color(context.accentColor)
                         .bold
                         .xl4
                         .make(),
                     catalog.desc.text.textStyle(context.captionStyle).xl.make(),
                     10.heightBox,
+                    "Amet elit officia veniam enim officia sint excepteur non enim ex eiusmod aliqua id. Deserunt et ad pariatur nisi mollit. Nisi id excepteur anim cillum qui officia duis in."
+                        .text
+                        .textStyle(context.captionStyle)
+                        .make()
                   ]).py64(),
                 ),
               ),

@@ -8,6 +8,7 @@ class MyTheme {
       fontFamily: GoogleFonts.poppins().fontFamily,
       cardColor: Colors.white,
       canvasColor: creamColor,
+      
       buttonColor: darkBlueColor,
       appBarTheme: AppBarTheme(
           centerTitle: true,
@@ -27,6 +28,7 @@ class MyTheme {
           centerTitle: true,
           color: Colors.white,
           elevation: 0.0,
+          titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
           iconTheme: IconThemeData(color: Colors.white),
           foregroundColor: Colors.black));
 

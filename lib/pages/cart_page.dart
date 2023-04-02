@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catlog/models/cart.dart';
-import 'package:flutter_catlog/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class CartPage extends StatelessWidget {
@@ -26,7 +25,6 @@ class CartPage extends StatelessWidget {
 }
 
 class _cartTotal extends StatelessWidget {
-  const _cartTotal({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -60,14 +58,7 @@ class _cartTotal extends StatelessWidget {
   }
 }
 
-class _CartList extends StatefulWidget {
-  const _CartList({super.key});
-
-  @override
-  State<_CartList> createState() => __CartListState();
-}
-
-class __CartListState extends State<_CartList> {
+class _CartList extends StatelessWidget{
   final _cart = CartModel();
   @override
   Widget build(BuildContext context) {
@@ -80,7 +71,7 @@ class __CartListState extends State<_CartList> {
               trailing: IconButton(
                 onPressed: () {
                   _cart.remove(_cart.items[index]);
-                  setState(() {});
+                
                 },
                 icon: Icon(
                   Icons.remove_circle_outline,

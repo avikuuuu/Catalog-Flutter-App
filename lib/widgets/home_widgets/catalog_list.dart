@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catlog/widgets/home_widgets/add_to_cart.dart';
 import 'package:velocity_x/velocity_x.dart';
-
-import 'package:flutter_catlog/models/cart.dart';
 import 'package:flutter_catlog/models/catalog.dart';
 import 'package:flutter_catlog/pages/home_detail_page.dart';
-import 'package:flutter_catlog/pages/home_page.dart';
 import 'package:flutter_catlog/widgets/home_widgets/catalog_image.dart';
-import 'package:flutter_catlog/widgets/themes.dart';
+
 
 class CatalogList extends StatelessWidget {
   @override

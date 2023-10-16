@@ -9,7 +9,7 @@ class MyTheme {
       cardColor: Colors.white,
       canvasColor: creamColor,
       
-      buttonColor: darkBlueColor,
+      highlightColor: darkBlueColor,
       appBarTheme: AppBarTheme(
           centerTitle: true,
           color: Colors.white,
@@ -22,8 +22,9 @@ class MyTheme {
       fontFamily: GoogleFonts.poppins().fontFamily,
       cardColor: Colors.black,
       canvasColor: darkcreamColor,
-      buttonColor: MyTheme.lightbulishcolor,
-      accentColor: Vx.white,
+      highlightColor: MyTheme.lightbulishcolor,
+      hintColor:Vx.white ,
+      // accentColor: ,
       appBarTheme: AppBarTheme(
           centerTitle: true,
           color: Colors.white,

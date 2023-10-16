@@ -42,7 +42,7 @@ class _cartTotal extends StatelessWidget {
               return "\$${_cart.totalPrice}"
                   .text
                   .xl5
-                  .color(context.theme.accentColor)
+                  .color(context.theme.hintColor)
                   .make();
             },
           ),
@@ -56,7 +56,7 @@ class _cartTotal extends StatelessWidget {
                   },
                   style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(context.theme.buttonColor)),
+                          MaterialStateProperty.all(context.theme.highlightColor)),
                   child: "Buy".text.white.make())
               .w32(context)
         ],

@@ -25,7 +25,7 @@ class AddToCart extends StatelessWidget {
         }),
         style: ButtonStyle(
             backgroundColor:
-                MaterialStateProperty.all(context.theme.buttonColor),
+                MaterialStateProperty.all(context.theme.highlightColor),
             shape: MaterialStateProperty.all(StadiumBorder())),
         child: isInCart
             ? Icon(Icons.done)
